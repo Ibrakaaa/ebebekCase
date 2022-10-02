@@ -44,7 +44,7 @@ class EmployeeTest {
     @DisplayName("Raise Test")
     void raiseSalary() {
         Employee firstEmployee = new Employee("Halil", 1000.0, 40, 2012);
-        // Set total work 9 year. So he should take %5 raise.
+        // Set total work 9 years. So he should take %5 raise.
         firstEmployee.raiseSalary();
         firstEmployee.totalSalary();
 
