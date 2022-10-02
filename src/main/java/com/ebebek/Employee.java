@@ -24,7 +24,7 @@ public class Employee {
 
     //Tax Calculation
     void tax(){
-        if(this.salary<=1000 && this.salary>0){
+        if(this.salary>0 && this.salary<=1000){
             this.tax = 0;
         }else if(this.salary>1000){
             this.tax =this.salary*0.03;
@@ -72,9 +72,9 @@ public class Employee {
 
     void toPrint(){
         System.out.println("Worker: "+this.name +"\n"+
-                "Salary: "+this.salary+" TL\n"+
-                "Weekly Work Hours: "+this.workHours+" Hours"+"\n"+
-                "Start Year: "+this.hireYear);
+                           "Salary: "+this.salary+" TL\n"+
+                           "Weekly Work Hours: "+this.workHours+" Hours"+"\n"+
+                           "Start Year: "+this.hireYear);
     }
 
 }
